@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#2a160d" />
+  <title>Las Cazadoras, Maca y la Estrella de los Sueños</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <main class="stage" aria-label="Libro interactivo">
+    <section class="cover" id="cover">
+      <div class="cover__ornament">✦</div>
+      <p class="cover__kicker">Un cuento de aventura, música y amistad</p>
+      <h1>Las Cazadoras, Maca<br><span>y la Estrella de los Sueños</span></h1>
+      <p class="cover__subtitle">Una historia de Rumi, Mira, Zoey y Maca</p>
+      <button class="open-book" id="openBook">Abrir el libro</button>
+      <p class="cover__hint">También puedes usar ← → para pasar las páginas</p>
+    </section>
+
+    <section class="book" id="book" aria-live="polite">
+      <div class="book__binding"></div>
+      <article class="page" id="page">
+        <div class="page__image-wrap"><img id="chapterImage" alt="" /></div>
+        <div class="page__content">
+          <div class="chapter-label" id="chapterLabel"></div>
+          <h2 id="chapterTitle"></h2>
+          <div class="flourish">❦</div>
+          <div class="story-text" id="chapterText"></div>
+          <p class="page-number" id="pageNumber"></p>
+        </div>
+      </article>
+      <button class="nav nav--prev" id="prev" aria-label="Página anterior">‹</button>
+      <button class="nav nav--next" id="next" aria-label="Página siguiente">›</button>
+      <div class="progress" id="progress"></div>
+      <button class="close-book" id="closeBook" aria-label="Cerrar libro">Cerrar libro</button>
+    </section>
+  </main>
+  <script src="js/story.js"></script>
+</body>
+</html>
